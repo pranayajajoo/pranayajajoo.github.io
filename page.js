@@ -37,7 +37,7 @@ var data = {
             text: 'I was selected to represent UIUC at the Purdue Supply Chain Case Competition. For the competition, my team and I were required to solve a complex global supply chain challenge across 3 continents while optimizing shipping routes and demand fullfillment, with plant capacity constraints and exchange rate variations. [slides]'
         },
         {
-            img: 'images_harshit/projects/igvc.png',
+            img: 'images_pranaya/projects/bc.jpg',
             title: 'BP Professional Responsibility Strategy Competition',
             text: 'My team and I won the First Runner Up prize for developing a 20-year plan to shift the energy mix in the developing country from non-renewable to renewable energy sources while satisfying all stakeholders and maintaining steady economic growth. [Slides]'
         },
