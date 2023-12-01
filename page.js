@@ -1,16 +1,10 @@
 var data = {
-    "experience": [
-        {
-            img: 'images_pranaya/Wayfair.jpg',
-            title: 'Wayfair LLC',
-            authors: 'Operations and Strategy Analyst',
-            text: '<b>Contact center product reform</b>: I worked on facilitating company-wide cutover from Avant’s legacy Cisco vendor to the new Twilio Flex platform that would enable agents to interact with customers. To do this, I collaborated cross-functionally with the front-end, back-end, customer operations, and data management teams to set-up the platform and build product features. <br> <b>Livevox contact center implementation</b>: I developed and deployed jobs for sending out SMSes, emails, voicemails, and for outbound dialing for customer communication in Livevox that would replace disparate vendors with $100k a year. I built SQL monitors for these and scripted Python jobs for auto-migrating customer communication data from Livevox to Avant’s cloud database. <br><b>Self-service capabilities</b>: In an attempt to provide self-service options to customers to reduce call-center traffic, I am collaborating with the development team to identify, build, and deploy APIs for self-service options like ‘Text-to-Pay’ and ‘Schedule Callbacks’.'
-        },
+    "research": [
         {
             img: 'images_harshit/research/fIRL.png',
             title: 'Avant LLC',
             authors: 'Operations and Strategy Analyst',
-            text: '<b>Contact center product reform</b>: I wornclkanclkaked on facilitating company-wide cutover from Avant’s legacy Cisco vendor to the new Twilio Flex platform that would enable agents to interact with customers. To do this, I collaborated cross-functionally with the front-end, back-end, customer operations, and data management teams to set-up the platform and build product features. <br> <b>Livevox contact center implementation</b>: I developed and deployed jobs for sending out SMSes, emails, voicemails, and for outbound dialing for customer communication in Livevox that would replace disparate vendors with $100k a year. I built SQL monitors for these and scripted Python jobs for auto-migrating customer communication data from Livevox to Avant’s cloud database. <br><b>Self-service capabilities</b>: In an attempt to provide self-service options to customers to reduce call-center traffic, I am collaborating with the development team to identify, build, and deploy APIs for self-service options like ‘Text-to-Pay’ and ‘Schedule Callbacks’.'
+            text: '<b>Contact center product reform</b>: I worked on facilitating company-wide cutover from Avant’s legacy Cisco vendor to the new Twilio Flex platform that would enable agents to interact with customers. To do this, I collaborated cross-functionally with the front-end, back-end, customer operations, and data management teams to set-up the platform and build product features. <br> <b>Livevox contact center implementation</b>: I developed and deployed jobs for sending out SMSes, emails, voicemails, and for outbound dialing for customer communication in Livevox that would replace disparate vendors with $100k a year. I built SQL monitors for these and scripted Python jobs for auto-migrating customer communication data from Livevox to Avant’s cloud database. <br><b>Self-service capabilities</b>: In an attempt to provide self-service options to customers to reduce call-center traffic, I am collaborating with the development team to identify, build, and deploy APIs for self-service options like ‘Text-to-Pay’ and ‘Schedule Callbacks’.'
         },
         {
             img: 'images_harshit/research/fIRL.png',
@@ -105,8 +99,8 @@ $('document').ready(function () {
 
 
     // Add research
-    for (var i = 0; i < data.experience.length; i++) {
-        var proj = data.experience[i];
+    for (var i = 0; i < data.research.length; i++) {
+        var proj = data.research[i];
         var html = getResearchHTML(proj);
         $('table#research-table').append(html);
     }
