@@ -4,6 +4,7 @@ var data = {
             img: 'images_pranaya/Wayfair.png',
             title: 'Wayfair LLC',
             authors: 'Product Management Intern',
+            subtitle: 'DEMAND PLANNiNG AND ANALYTiCS'
             text: 'I am currently working as a Product Management Intern at Runaway, wheren I have developed a detailed product roadmap for developing a web application for a mental health initiative, and conducting weekly agile sprints for all stages of the SDLC based on user stories and monitoring product iterations.'
             text: 'dajhsbdkajs'
         },
