@@ -1,12 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="page.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <title>Pranaya Jajoo</title>
+</head>
+
+<body>
+
+    <div id="content">
+        <div class="container" id="links">
+            <p>
+                <hr>
+            </p>
+            <p>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#projects">Projects</a>
+                <a href="resume.pdf" target="_blank">Resume</a>
+            </p>
+            <br>
+            <p>
+                <hr width=100%>
+            </p>
+        </div>
+
+        <img id='profile-img' style="float:right" src="images_pranaya/profile.jpg" alt="Pranaya Jajoo">
+        <div id="title">
+            <h1></h1>
+            <h1>Pranaya Jajoo</h1>
+            <h3>&nbsp;&nbsp;Technology Management @ University of Illinois Urbana-Champaign</h3>
+            <h3>&nbsp;&nbsp;pjajoo2<span style="display:none">spam</span>[at]illinois.edu</h3>
+        </div>
+        <!-- <hr> -->
+        <!-- links -->
+
+
+        <div class="container" id="About">
+            <h2>About </h2>
+            I am a Master’s student in <a href="https://www.cs.cmu.edu/" target="_blank"> Technology Management </a>
+            (2019-20) at the
+            Gies College of Business, University 0f Illinois Urbana-Champaign. I am currently working as a Product
+            Management Intern at <a href="https://www.runawayapp.com/" target="_blank"> Runaway </a>, wheren I have
+            developed a detailed
+            product roadmap for
+            developing a web application for a mental health initiative, and conducting weekly agile sprints for all
+            stages of the SDLC
+            based on user stories and monitoring product iterations. During my time at UIUC, I have been focused on
+            working in various
+            consulting projects and case competitions. As the runner up of the British Petroleum Professional Strategy
+            Competition, I
+            developed a 20-year plan to transition a developing country’s reliance from non-renewable sources to clean
+            sources. As a consultant for
+            <a href="https://giesbusiness.illinois.edu/experience/experiential-learning/illinois-business-consulting"
+                target="_blank"> Illinois Business Consulting </a>,
+            I worked on standardizing pellet delivery throughout the week for a global retail grocery chain, to ensure a
+            more efficient demand-based replenishment
+            system by conducting data analysis on current logistics and storage data of over 70 stores.
+
+            Prior to this, I received my Bachelor’s degree in Electrical Engineering from the Department of Electrical
+            Engineering at the Veermata
+            Jijabai Technological Institute, Mumbai.
+            In my spare time, I enjoy reading books and solving the Rubik\'s cube. I spent most of time at VJTI
+            conducting cubing workshops and making cube arts.
+            As the head of the Rubik's Cube Mumbai Open, I organized an international cubing competition with 13
+            categories and over 350 participants with collaboration with <thead>
+                <a href="https://www.worldcubeassociation.org/" target="_blank"> World Cube Organization </a>.
+
+                <hr>
+        </div>
+        <br>
+
+
+
+
+        <div class="container" id="experience">
+            <h2>Experience</h2>
+            <table id="research-table"></table>
+            <hr>
+        </div>
+
+
+        <div class="container" id="projects">
+            <h2>Projects</h2>
+            <table id="projects-table"></table>
+            <hr>
+        </div>
+
+        <div class="container" id="teaching">
+            <h2>Teaching</h2>
+            <table id="teaching-table"></table>
+            <hr>
+        </div>
+
+
+        <!-- spacer to expand content div -->
+        <div class="spacer" style="clear: both;"></div>
+    </div> <!-- end container div -->
+
+</body>
+
+</html>
+ 336 changes: 336 additions & 0 deletions336  
+page.js
+@@ -0,0 +1,336 @@
 var data = {
     "research": [
         {
-            img: 'images_pranaya/Wayfair.png',
-            title: 'Wayfair LLC',
+            img: 'images_harshit/research/fIRL.png',
+            title: 'Runaway',
             authors: 'Product Management Intern',
-            subtitle: 'DEMAND PLANNiNG AND ANALYTiCS'
             text: 'I am currently working as a Product Management Intern at Runaway, wheren I have developed a detailed product roadmap for developing a web application for a mental health initiative, and conducting weekly agile sprints for all stages of the SDLC based on user stories and monitoring product iterations.'
-            text: 'dajhsbdkajs'
         },
         {
             img: 'images_harshit/research/FlowPlan.png',
@@ -157,182 +267,3 @@ function getBlogHTML(proj) {
     html += '</tr>';
     return html;
 }
-
-
-// var data = {
-//     "research": [
-//         {
-//             img: 'images_harshit/research/fIRL.png',
-//             title: 'Runaway',
-//             authors: 'Product Management Intern',
-//             text: 'I am currently working as a Product Management Intern at Runaway, wheren I have developed a detailed product roadmap for developing a web application for a mental health initiative, and conducting weekly agile sprints for all stages of the SDLC based on user stories and monitoring product iterations.',
-//         },
-//         {
-//             img: 'images_harshit/research/FlowPlan.png',
-//             title: 'Illinois Business Consulting (IBC)',
-//             authors: 'Consultant',
-//             text: 'I was a consultant for Illinois Business Consulting where I worked for a global retail grocery chain to standardized their pellet delivery throughout the week to ensure a more efficient demand-based replenishment system across the client’s network of grocery stores. To do this, I performed data analysis on current logistics and storage data of over 70 stores and developed a VBA-Macros tool that would optimize pallet delivery using input data for the client to use on other stores now and in the future',
-//         },
-//         {
-//             img: 'images_harshit/research/LOOP.png',
-//             title: 'Bhabha Atomic Research Center',
-//             authors: 'Project Trainee',
-//             text: 'I worked on a project to digitize the analysis of signals emitted by radioactive elements which could then be used to determine which element was emitted the radiation. I managed this project using waterfall management and my team and I were able to reduce the cost of analysis by 0.5% by eliminating the need for equipment.',
-//         },
-//         {
-//             img: 'images_harshit/research/lane_detection.png',
-//             title: 'R. R. Kabel Limited',
-//             authors: 'Operations Intern',
-//             text: 'I proposed an optimized manufacturing process at a leading cables and wires manufacturing company that would streamline processes from the drawing of the copper to testing, packaging and delivery of wires and cables.',
-//         },
-//         {
-//             img: 'images_harshit/research/face_detection.png',
-//             title: 'Siemens Limited',
-//             authors: 'Supply Chain Intern',
-//             text: 'I built a dashboard to track the efficient of a circuit breaker factory along with employee distribution and absenteesm. I also calculated the required cycle time and current production rate to determine how to make the factory more productive so as to fullfill all ongoing orders in the curretn fiscal year. The project resulted in 3% increase in the rate of production.',
-//         }],
-//     //     "teaching": [
-//     //         {
-//     //             img: 'images_harshit/projects/agv.png',
-//     //             title: 'BADM 508 - Leadership and Teams',
-//     //             text: 'This course develops and integrates fundamental behavioral concepts and theory having administrative applications; initially focuses on the individual decision maker and ultimately includes interpersonal, organizational, and social structures and influences; and develops strategies and methods of research on behavioral applications in business.
-//     // • Schedule Type: Online
-//     // • Campus: Urbana - Champaign
-//     // • Semester: Spring 2020
-//     // • Instructional Method: Extramural - Open Learning
-//     // • Credit Hours: 4
-//     // • Duration: 8 Weeks'
-//     //         },
-//     // {
-//     //     img: 'images_harshit/projects/igvc.png',
-//     //         title: 'MBA 551 - Strategic Innovation',
-//     //             text: 'This course covers the strategic perspective on innovation and the management side of innovation efforts – leadership and design of innovation initiatives such that employees are able to effectively execute them. It also covers how to successfully implement innovation efforts while working alongside established businesses at the same firm, the challenges of leading product development teams, the analysis of planning and evaluation systems for innovation initiatives, and how to manage innovation when the initiative spans organizational boundaries.
-//     //     • Schedule Type: Online
-//     //     • Campus: Urbana - Champaign
-//     //     • Semester: Spring 2020
-//     //     • Instructional Method: Extramural - Open Learning
-//     //     • Credit Hours: 4
-//     //     • Duration: 8 Weeks'
-//     // },
-//     // {
-//     //     img: 'images_harshit/projects/unnati.png',
-//     //         title: 'BADM 312 - Designing and Managing Organizations',
-//     //             text: 'This course covers the general understanding of complex organizations; particular attention to ways of dividing work, achieving coordination, and issues connected with change and adaptation.
-//     //     • Schedule Type: Lecture - Discussion
-//     //     • Campus: Urbana - Champaign
-//     //     • Semester: Spring 2020
-//     //     • Prerequisite: BADM 310 - Management and Organizational Behavior
-//     //     • Time: Tuesday / Thursday 12: 30 PM to 1: 50 PM
-//     //     • Credit Hours: 3
-//     //     • Duration: 16 Weeks'
-//     // }],
-//     // "teaching": [
-//     // ],
-//     //     "Projects": [
-//     //         {
-//     //             img: 'images/',
-//     //             title: 'GSCMI Intercollege Graduate Case Competition',
-//     //             text: 'I was selected to represent UIUC at the Purdue Supply Chain Case Competition. For the competition, my team and I were required to solve a complex global supply chain challenge across 3 continents while optimizing shipping routes and demand fullfillment, with plant capacity constraints and exchange rate variations. [slides]'
-//     //         },
-//     //         {
-//     //             img: 'images/',
-//     //             title: 'BP Professional Responsibility Strategy Competition',
-//     //             text: 'My team and I won the First Runner Up prize for developing a 20-year plan to shift the energy mix in the developing country from non-renewable to renewable energy sources while satisfying all stakeholders and maintaining steady economic growth. [Slides]'
-//     //         },
-//     //         {
-//     //             img: 'images/',
-//     //             title: 'Automatic Traffic Control using Computer Vision',
-//     //             text: 'As a part of my B. Tech. thesis project, I collaborated closely with traffic police and my engineering team to address vehicular traffic problems in Mumbai by devising an effective system by collecting traffic data from 11 signals and applying image processing using agile project management'
-//     //         }
-//     //     ],
-//     //         "news": [
-//     //         ],
-// }
-
-// $('document').ready(function () {
-//     // Add news
-//     // for (var i = 0; i < data.news.length; i++) {
-//     //     var proj = data.news[i];
-//     //     var html = '<tr><td>&#8594; ' + proj + '</td></tr>';
-//     //     $('table#news-table').append(html);
-//     // }
-
-
-//     // Add projects
-//     for (var i = 0; i < data.projects.length; i++) {
-//         var proj = data.projects[i];
-//         var html = getProjectHTML(proj);
-//         $('table#projects-table').append(html);
-//     }
-
-//     // Add teaching
-//     for (var i = 0; i < data.teaching.length; i++) {
-//         var proj = data.teaching[i];
-//         var html = getProjectHTML(proj);
-//         $('table#teaching-table').append(html);
-//     }
-
-
-//     // Add research
-//     for (var i = 0; i < data.research.length; i++) {
-//         var proj = data.research[i];
-//         var html = getResearchHTML(proj);
-//         $('table#research-table').append(html);
-//     }
-
-//     // Add blog
-//     for (var i = 0; i < data.blog.length; i++) {
-//         var proj = data.blog[i];
-//         var html = getBlogHTML(proj);
-//         $('table#blog-table').append(html);
-//     }
-
-
-
-// });
-
-
-// function getProjectHTML(proj) {
-//     var html = '<tr>';
-//     // Add image
-//     // Add title and description
-//     // html += '<td class="image-td"><img class="project-img" src="' + proj.img + '"></td>';
-//     // html += '<iframe width="420" height="315" src="' + proj.img + '> </iframe > '
-//     html += '<td class="description-td"><h3>' + proj.title + '</h3>'
-//     if ('authors' in proj) {
-//         html += '<p><i>' + proj.authors + '</i></p>'
-//     }
-//     html += '<p>' + proj.text + '</p></td>';
-
-//     html += '</tr>';
-//     return html;
-// }
-
-// function getResearchHTML(proj) {
-//     var html = '<tr>';
-//     // Add image
-//     // Add title and description
-//     html += '<td class="description-td"><h3>' + proj.title + '</h3>'
-//     if ('authors' in proj) {
-//         html += '<p><i>' + proj.authors + '</i></p>'
-//     }
-//     html += '<p>' + proj.text + '</p></td>';
-//     html += '<td class="image-td"><img class="project-img" src="' + proj.img + '"></td>';
-
-//     html += '</tr>';
-//     return html;
-// }
-
-// function getBlogHTML(proj) {
-//     var html = '<tr>';
-//     // Add image
-//     // Add title and description
-//     html += '<td class="description-td"><h3>' + proj.title + '</h3>'
-//     if ('authors' in proj) {
-//         html += '<p><i>' + proj.authors + '</i></p>'
-//     }
-//     html += '<p>' + proj.text + '</p></td>';
-
-//     html += '</tr>';
-//     return html;
-// }
