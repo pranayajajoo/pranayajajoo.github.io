@@ -105,8 +105,8 @@ $('document').ready(function () {
 
 
     // Add research
-    for (var i = 0; i < data.research.length; i++) {
-        var proj = data.research[i];
+    for (var i = 0; i < data.experience.length; i++) {
+        var proj = data.experience[i];
         var html = getResearchHTML(proj);
         $('table#research-table').append(html);
     }
