@@ -4,7 +4,8 @@ var data = {
             img: 'images_pranaya/Wayfair.png',
             title: 'Wayfair LLC',
             authors: 'Product Management Intern',
-            text: '• I am currently working as a Product Management Intern at Runaway, wheren I have developed a detailed product roadmap for developing a web application for a mental health initiative, and conducting weekly agile sprints for all stages of the SDLC based on user stories and monitoring product iterations.'
+            text: 'I am currently working as a Product Management Intern at Runaway, wheren I have developed a detailed product roadmap for developing a web application for a mental health initiative, and conducting weekly agile sprints for all stages of the SDLC based on user stories and monitoring product iterations.'
+            text: 'dajhsbdkajs'
         },
         {
             img: 'images_harshit/research/FlowPlan.png',
@@ -55,13 +56,7 @@ var data = {
         {
             img: 'images_harshit/projects/igvc.png',
             title: 'MBA 551 - Strategic Innovation',
-            text: 'This course covers the strategic perspective on innovation and the management side of innovation efforts – leadership and design of innovation initiatives such that employees are able to effectively execute them. It also covers how to successfully implement innovation efforts while working alongside established businesses at the same firm, the challenges of leading product development teams, the analysis of planning and evaluation systems for innovation initiatives, and how to manage innovation when the initiative spans organizational boundaries.
-            //     //     • Schedule Type: Online
-            //     //     • Campus: Urbana - Champaign
-            //     //     • Semester: Spring 2020
-            //     //     • Instructional Method: Extramural - Open Learning
-            //     //     • Credit Hours: 4
-            //     //     • Duration: 8 Weeks'
+            text: 'This course covers the strategic perspective on innovation and the management side of innovation efforts – leadership and design of innovation initiatives such that employees are able to effectively execute them. It also covers how to successfully implement innovation efforts while working alongside established businesses at the same firm, the challenges of leading product development teams, the analysis of planning and evaluation systems for innovation initiatives, and how to manage innovation when the initiative spans organizational boundaries.'
         },
         {
             img: 'images_harshit/projects/unnati.png',
