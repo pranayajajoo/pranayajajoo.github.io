@@ -121,7 +121,7 @@ var data = {
             title: 'Siemens Limited',
             teams: [
                 {
-                    teamName: 'SUpply Chain Intern | Data Visualization',
+                    teamName: 'Supply Chain Intern | Data Visualization',
                     period: 'Jun 2017 - Aug 2017',
                     text: [
                             ['Created a Tableau dashboard that tracked the required cycle time vs current production rate for circuit breakers, employee distribution on the assembly line, and status of defective appliances, raw materials, and missing orders, increasing the production rate by 3%.']
@@ -165,6 +165,7 @@ var data = {
         {
             img: 'images/',
             title: 'University of Illinois - Urbana Champaign',
+            authors: 'Teaching Assistant',
             text: 'Assisted in teaching, mentoring, assessment, and grading activities for undergraduate courses BADM 312 (Designing and Managing Organizations), BADM 329 (New Product Development), and BADM 365 (New Product Marketing) and graduate courses BADM 508 (Leadership and Teams), MBA 551 (Strategic Innovation), BIOE 573 (Managing Business Operations), BADM 525 (New Product Development).'
         }],
     "blog": [
