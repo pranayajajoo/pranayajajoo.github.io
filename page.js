@@ -2,34 +2,35 @@ var data = {
     "research": [
         {
             img: 'images/',
-            title: 'Runaway',
-            authors: 'Product Management Intern',
-            text: 'dankjsdnas'
-        },
-        {
-            img: 'images/',
-            title: 'Illinois Business Consulting (IBC)',
-            authors: 'Consultant',
-            text: 'I was a consultant for Illinois Business Consulting where I worked for a global retail grocery chain to standardized their pellet delivery throughout the week to ensure a more efficient demand-based replenishment system across the client’s network of grocery stores. To do this, I performed data analysis on current logistics and storage data of over 70 stores and developed a VBA-Macros tool that would optimize pallet delivery using input data for the client to use on other stores now and in the future',
-        },
-        {
-            img: 'images/',
-            title: 'Bhabha Atomic Research Center',
-            authors: 'Internship',
-            text: 'I worked on a project to digitize the analysis of signals emitted by radioactive elements which could then be used to determine which element was emitted the radiation. I managed this project using waterfall management and my team and I were able to reduce the cost of analysis by 0.5% by eliminating the need for equipment.',
-        },
-        {
-            img: 'images/',
-            title: 'R. R. Kabel Limited',
-            authors: 'Operations Intern',
-            text: 'I proposed an optimized manufacturing process at a leading cables and wires manufacturing company that would streamline processes from the drawing of the copper to testing, packaging and delivery of wires and cables.',
-        },
-        {
-            img: 'images/',
-            title: 'Siemens Limited',
-            authors: 'Supply Chain Intern',
-            text: 'I built a dashboard to track the efficient of a circuit breaker factory along with employee distribution and absenteesm. I also calculated the required cycle time and current production rate to determine how to make the factory more productive so as to fullfill all ongoing orders in the curretn fiscal year. The project resulted in 3% increase in the rate of production.',
-        }],
+            title: 'Wayfair LLC',
+            authors: 'Senior Data Analyst',
+            teams: [
+                {
+                    teamName: 'Planning and Inventory Management',
+                    period: 'Jan 2023 - Present',
+                    text: [['Defined key metrics that served as a heuristics, allowing us to measure supplier performance while being interpretable to stakeholders, and developed new data pipelines to capture new and existing KPIs; planned and performed end-to-end development of several internal tools and dashboards to surface operational metrics and enable streamlined replenishment process. Worked closely in conjunction with internal tech teams and supplier facing teams to develop reporting.'],
+                            ['Developed a unifying interface for incorporating fine-tuned language models to interact with the internal data. These include: enabling text to SQL queries directly on internal databases with language models and retrieval augmented generation (RAG) for extracting factual information from document databases.'],
+                            ['QA tested and discovered several data discrepancies and shortcomings in the legacy in-house inventory tool causing over-ordering and leading to deadstock. Consequently, rebuilt the inventory procurement tool to take in time-series data, clean it, and produce more accurate forecast (by 7.8% for top-selling items and 12.8% for tail items}) and order quantities while being robust and scalable. My tool has since been tested for over a year, used to over inventory worth over $800M, and productionlized into a web application.'],
+                            ['Implemented automated data cleaning and validation algorithms to enable for replenishment 8500 high-velocity products with forecasted sales of over $300M over the next 12 months.']
+                        ]
+                },
+                {
+                    teamName: 'Returns Monetization Channel Growth',
+                    period: 'Aug 2022 - Jan 2023',
+                    text: [['Used regression models on historical data to evaluate the most profitable product categories to sell at Wayfair\'s returned inventory outlet store pilot; developed procurement and merchandising strategies to maximize profit and built standardized reporting to track performance of the outlet store. The store achieved profitability within 3 months of opening with $500K annual profit operating only one day/week and the pilot has since been expanded to two more locations in the US.'],
+                            ['Developed an internal tool using excel and GBQ to generate details like description and list price of any returned product to be sold at Wayfair\'s outlet store and used API connectors to integrated data pipelines to and from the third-party point of sale system.']
+                          ]
+                },
+                {
+                    teamName: 'Partner Operations for Specialty Retail Brands',
+                    period: 'Mar 2022 - aug 2022',
+                    text: [['Created new product and supplier databases for Specialty Retail Brands, Flagship Brands, and Physical Retail.'],
+                            ['Developed and maintained long-term reporting for All Modern, Joss and Main, Birch Lane, and Wayfair\'s physical retail business in the form of KPI reports and dashboards; Created a query database by writing custom SQL queries based on business requirements.']
+                          ]
+                }
+            ]
+        }
+    ],
     "projects": [
         {
             img: 'images/',
@@ -118,6 +119,9 @@ function getProjectHTML(proj) {
     // html += '<td class="image-td"><img class="project-img" src="' + proj.img + '"></td>';
     // html += '<iframe width="420" height="315" src="' + proj.img + '> </iframe > '
     html += '<td class="description-td"><h3>' + proj.title + '</h3>'
+    if ('team' in proj) {
+        html += '<h4>' + proj.team + '</h4>';
+    }
     if ('authors' in proj) {
         html += '<p><i>' + proj.authors + '</i></p>'
     }
@@ -135,8 +139,34 @@ function getResearchHTML(proj) {
     if ('authors' in proj) {
         html += '<p><i>' + proj.authors + '</i></p>'
     }
-    html += '<p>' + proj.text + '</p></td>';
-    // html += '<td class="image-td"><img class="project-img" src="' + proj.img + '"></td>';
+    if ('period' in proj) {
+        html += '<p><i>' + proj.period + '</i></p>'
+    }
+
+    if ('teams' in proj && Array.isArray(proj.teams)) {
+        for (var i = 0; i < proj.teams.length; i++) {
+            var team = proj.teams[i];
+            if ('teamName' in team) {
+                // Remove the word "team" from the team title
+                var teamTitle = team.teamName.replace('team', '').trim();
+                html += '<p><strong>' + teamTitle + ':</strong></p>';
+            }
+            if ('period' in team) {
+                // Remove the word "team" from the team title
+                var teamTitle = team.period.replace('team', '').trim();
+                html += '<p><strong>' + teamTitle + ':</strong></p>';
+            }
+            if ('text' in team && Array.isArray(team.text)) {
+                html += '<ul>'; // Start the unordered list
+                for (var j = 0; j < team.text.length; j++) {
+                    html += '<li>' + team.text[j] + '</li>'; // Add each list item
+                }
+                html += '</ul>'; // Close the unordered list
+            }     
+        }
+    }
+    
+    html += '</td>';
 
     html += '</tr>';
     return html;
