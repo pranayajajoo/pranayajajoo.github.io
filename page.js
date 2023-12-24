@@ -1,7 +1,7 @@
 var data = {
     "research": [
         {
-            img: '/Users/pranaya/Documents/GitHub/pranayajajoo.github.io/images_pranaya/Wayfair.jpg',
+            img: 'images_pranaya/Wayfair.jpg',
             title: 'Wayfair LLC',
             teams: [
                 {
@@ -30,7 +30,7 @@ var data = {
             ]
         },
         {
-            img: '../images_pranaya/Wayfair.jpg',
+            img: '/images_pranaya/Wayfair.jpg',
             title: 'Avant LLC',
             teams: [
                 {
@@ -167,7 +167,20 @@ var data = {
             title: 'University of Illinois - Urbana Champaign',
             text: 'Assisted in teaching, mentoring, assessment, and grading activities for undergraduate courses BADM 312 (Designing and Managing Organizations), BADM 329 (New Product Development), and BADM 365 (New Product Marketing) and graduate courses BADM 508 (Leadership and Teams), MBA 551 (Strategic Innovation), BIOE 573 (Managing Business Operations), BADM 525 (New Product Development).'
         }],
-    "blog": [
+    "education": [
+        {
+            img: 'images/',
+            university: 'University of Illinois - Urbana Champaign',
+            degree: 'Master of Science in Technology Management | 3.96/4 | Recepient of the Award for Academic Excellence',
+            text: ''
+        },
+        {
+            img: 'images/',
+            university: 'Veermata Jijabai Technological Institute',
+            degree: 'Bachelor of Technology in Electrical Engineering | 7.36/10',
+            text: ''
+        }
+    
     ],
     "news": [
     ],
@@ -204,11 +217,11 @@ $('document').ready(function () {
         $('table#research-table').append(html);
     }
 
-    // Add blog
-    for (var i = 0; i < data.blog.length; i++) {
-        var proj = data.blog[i];
-        var html = getBlogHTML(proj);
-        $('table#blog-table').append(html);
+    // Add education
+    for (var i = 0; i < data.education.length; i++) {
+        var proj = data.education[i];
+        var html = getEducationHTML(proj);
+        $('table#education-table').append(html);
     }
 
 
@@ -246,6 +259,8 @@ function getProjectHTML(proj) {
 function getResearchHTML(proj) {
     var html = '<tr>';
     // Add image
+    // html += '<td class="image-td"><img class="project-img" src="' + proj.img + '"></td>';
+    // html += '<iframe width="420" height="315" src="' + proj.img + '> </iframe > '
     // Add title and description
     html += '<td class="description-td"><h3>' + proj.title + '</h3>'
 
@@ -290,6 +305,21 @@ function getTeachingHTML(proj) {
         html += '<p><i>' + proj.text + '</i></p>'
     }
     
+    html += '</tr>';
+    return html;
+}
+
+function getEducationHTML(proj) {
+    var html = '<tr>';
+
+    html += '<td class="description-td"><h3>' + proj.university + '</h3>'
+    if ('degree' in proj) {
+        html += '<p><i>' + proj.degree + '</i></p>'
+    }
+    if ('text' in proj) {
+        html += '<p><i>' + proj.text + '</i></p>'
+    }
+
     html += '</tr>';
     return html;
 }
