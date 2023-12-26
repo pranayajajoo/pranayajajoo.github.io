@@ -7,23 +7,27 @@ var data = {
                 {
                     teamName: 'Senior Data Analyst | Planning and Inventory Management',
                     period: 'Jan 2023 - Present',
-                    text: [['Defined key metrics that served as a heuristics, allowing us to measure supplier performance while being interpretable to stakeholders, and developed new data pipelines to capture new and existing KPIs; planned and performed end-to-end development of several internal tools and dashboards to surface operational metrics and enable streamlined replenishment process. Worked closely in conjunction with internal tech teams and supplier facing teams to develop reporting.'],
-                            ['Developed a unifying interface for incorporating fine-tuned language models to interact with the internal data. These include: enabling text to SQL queries directly on internal databases with language models and retrieval augmented generation (RAG) for extracting factual information from document databases.'],
-                            ['QA tested and discovered several data discrepancies and shortcomings in the legacy in-house inventory tool causing over-ordering and leading to deadstock. Consequently, rebuilt the inventory procurement tool to take in time-series data, clean it, and produce more accurate forecast (by 7.8% for top-selling items and 12.8% for tail items}) and order quantities while being robust and scalable. My tool has since been tested for over a year, used to over inventory worth over $800M, and productionlized into a web application.'],
-                            ['Implemented automated data cleaning and validation algorithms to enable for replenishment 8500 high-velocity products with forecasted sales of over $300M over the next 12 months.']
+                    text1:'My role in Planning and Inventory Management was to support my stakeholders, inventory managers, order and position inventory globally. To that effect, I - ',
+                    text2: [
+                            ['Developed an internal tool that generated more accurate forecast and produced order quantities. This tool has since been tested for a year, used to over $800M of inventory, and productionalized into a web application.'],
+                            ['Incorporated fine-tuned large language models to enable text-to-SQL querying and retrieval augmented generation (RAG) for extracting factual information from document databases.'],
+                            ['Defined new KPIs and developed several data pipelines and data visualization reports to enable better operations for my stakeholders.']
                         ]
                 },
                 {
                     teamName: 'Senior Data Analyst | Returns Monetization Channel Growth',
                     period: 'Aug 2022 - Jan 2023',
-                    text: [['Used regression models on historical data to evaluate the most profitable product categories to sell at Wayfair\'s returned inventory outlet store pilot; developed procurement and merchandising strategies to maximize profit and built standardized reporting to track performance of the outlet store. The store achieved profitability within 3 months of opening with $500K annual profit operating only one day/week and the pilot has since been expanded to two more locations in the US.'],
-                            ['Developed an internal tool using excel and GBQ to generate details like description and list price of any returned product to be sold at Wayfair\'s outlet store and used API connectors to integrated data pipelines to and from the third-party point of sale system.']
+                    // text1: 'My role in Returns monetization Channel Growth was to provide tech support to the development of new monetization channels for returned inventory. To that effect, I - ',
+                    text2: [['Used regression models determine the most profitable products categories to sell in Wayfair’s outlet store and to determine storage plans for large-parcel and small-parcel inventory.'],
+                            ['Developed an internal tool that would extract details like currently listed price and item description for a product and used API connectors to send this information to a third-party point of sale system.']
                           ]
                 },
                 {
                     teamName: 'Senior Data Analyst | Partner Operations for Specialty Retail Brands',
                     period: 'Mar 2022 - aug 2022',
-                    text: [['Created new product and supplier databases for Specialty Retail Brands, Flagship Brands, and Physical Retail.'],
+                    text1: '',
+                    text2: [
+                            ['Created new product and supplier databases for Specialty Retail Brands, Flagship Brands, and Physical Retail.'],
                             ['Developed and maintained long-term reporting for All Modern, Joss and Main, Birch Lane, and Wayfair\'s physical retail business in the form of KPI reports and dashboards; Created a query database by writing custom SQL queries based on business requirements.']
                           ]
                 }
@@ -36,14 +40,16 @@ var data = {
                 {
                     teamName: 'Senior Data Analyst | Product and Data',
                     period: 'Jan 2022 - Feb 2022',
-                    text: [
+                    text1: '',
+                    text2: [
                             ['Intelligent self-service capabilities: Used planning algorithms like Dijkstra\'s and A-star to identify paths that were most used and amenable to be converted to a self service pipeline; managed the build, testing, and deployment of APIs with the development team to facilitate automated capabilities like \‘Text-to-Pay\’ and \‘Schedule Callbacks\’ within the Interactive Voice Response system, SMS, and mobile application, saving the company $100K per year.']
                           ]
                 },
                 {
                     teamName: 'Data Analyst | Operations Strategy',
                     period: 'Dec 2020 - Dec 2021',
-                    text: [
+                    text1: '',
+                    text2: [
                             ['Automate agent scheduling for customer interactions: Proposed and developed to use online learning strategies like Upper-Confidence Bound (UCB) to automate agent-customer interaction and provably reduce customer regret and facilitate even load distribution.'],
                             ['Livevox SMS and dialing campaigns implementation: Deployed LiveVox, a collections communications platform, to replace a disparate infrastructure of in-house and third party applications that managed outbound dialing, email, and SMS leading to estimated savings of $100K   a year. Scripted python jobs for auto-migrating customer communication data from Livevox to Avant\’s CRM; deployed monitoring and testing for customer communication campaigns.']
                           ]
@@ -57,7 +63,8 @@ var data = {
                 {
                     teamName: 'Technical Product Manager | Web and Mobile Application',
                     period: 'Jun 2020 - Dec 2020',
-                    text: [
+                    text1: '',
+                    text2: [
                             ['Created the product road-map and led the development and launch of a front-end mobile application and a back-end web application in the mental health space.']
                           ]
                 }
@@ -70,7 +77,8 @@ var data = {
                 {
                     teamName: 'Technical Consultant for Aldi | Regression, Forecasting models',
                     period: 'Jan 2020 - May 2020',
-                    text: [
+                    text1: '',
+                    text2: [
                             ['Improved logistical services to reduce labour costs by standardizing pellet delivery throughout the week using regression models to find the best delivery days for stores by region.'],
                             ['Created a database-to-google sheets tool that will automate the process of identifying the most efficient delivery operation based on dynamically changing data from stores located globally now and in the future.']
                           ]
@@ -84,7 +92,8 @@ var data = {
                 {
                     teamName: 'Technical Manager (part-time) | Computer Vision, Startup',
                     period: 'Jan 2020 - May 2020',
-                    text: [
+                    text1: '',
+                    text2: [
                             ['Led a team of 4 in developing computer vision techniques for live cell imaging. We focused on curating datasets and building upon methods like YOLO for detection and Mask-RCNN for segmentation.']
                           ]
                 }
@@ -97,7 +106,8 @@ var data = {
                 {
                     teamName: 'Research Intern | Multimodal Machine Learning',
                     period: 'Jun 2018 - Sep 2018',
-                    text: [
+                    text1: '',
+                    text2: [
                             ['Worked under lead Scientific Officer, Paraj Walinjkar, to predict the impact of radiation on surroundings depending on environmental factors. The data sources varied from readings from specialized instruments to weather readings. The project resulted in eliminating the need for analog and manual analysis and reducing costs by $6000.']
                           ]
                 }
@@ -110,7 +120,8 @@ var data = {
                 {
                     teamName: 'Analyst Intern | Time Series Modelling',
                     period: 'Mar 2018 - May 2018',
-                    text: [
+                    text1: '',
+                    text2: [
                             ['Designed a time-series model to keep track of key Quality Assurance parameters in wire and cable manufacturing as a function of past and present demand, historical raw material quality characterizations, and human workforce.']
                           ]
                 }
@@ -123,7 +134,8 @@ var data = {
                 {
                     teamName: 'SUpply Chain Intern | Data Visualization',
                     period: 'Jun 2017 - Aug 2017',
-                    text: [
+                    text1: '',
+                    text2: [
                             ['Created a Tableau dashboard that tracked the required cycle time vs current production rate for circuit breakers, employee distribution on the assembly line, and status of defective appliances, raw materials, and missing orders, increasing the production rate by 3%.']
                           ]
                 }
@@ -277,10 +289,15 @@ function getResearchHTML(proj) {
                 var teamTitle = team.period.replace('team', '').trim();
                 html += '<p><i>' + teamTitle + ':</i></p>';
             }
-            if ('text' in team && Array.isArray(team.text)) {
+            if ('text1' in team) {
+                // Remove the word "team" from the team title
+                var teamTitle = team.text1.replace('team', '').trim();
+                html += '<p>' + teamTitle + '</p>';
+            }
+            if ('text2' in team && Array.isArray(team.text2)) {
                 html += '<ul>'; // Start the unordered list
-                for (var j = 0; j < team.text.length; j++) {
-                    html += '<li>' + team.text[j] + '</li>'; // Add each list item
+                for (var j = 0; j < team.text2.length; j++) {
+                    html += '<li>' + team.text2[j] + '</li>'; // Add each list item
                 }
                 html += '</ul>'; // Close the unordered list
             }     
