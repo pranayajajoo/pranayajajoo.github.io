@@ -40,9 +40,9 @@ var data = {
                 {
                     teamName: 'Senior Data Analyst | Product and Data',
                     period: 'Jan 2022 - Feb 2022',
-                    text1: '',
+                    text1: 'Saved labor costs in customer service by -',
                     text2: [
-                            ['Intelligent self-service capabilities: Used planning algorithms like Dijkstra\'s and A-star to identify paths that were most used and amenable to be converted to a self service pipeline; managed the build, testing, and deployment of APIs with the development team to facilitate automated capabilities like \‘Text-to-Pay\’ and \‘Schedule Callbacks\’ within the Interactive Voice Response system, SMS, and mobile application, saving the company $100K per year.']
+                            ['Using planning algorithms like Dijkstra\'s and A-star to identify paths that were most used and amenable to be converted to a self service pipeline and building them. Some pipelines that I added are - \‘Text-to-Pay\’ and \‘Schedule Callbacks\’.']
                           ]
                 },
                 {
