@@ -183,13 +183,13 @@ var data = {
         {
             img: 'images/',
             university: 'University of Illinois - Urbana Champaign',
-            degree: 'Master of Science in Technology Management | 3.96/4 | Recepient of the Award for Academic Excellence',
+            degree: 'Master of Science in Technology Management | Recepient of the Award for Academic Excellence',
             text: ''
         },
         {
             img: 'images/',
             university: 'Veermata Jijabai Technological Institute',
-            degree: 'Bachelor of Technology in Electrical Engineering | 7.36/10',
+            degree: 'Bachelor of Technology in Electrical Engineering',
             text: ''
         }
     
