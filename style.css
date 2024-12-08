@@ -1,113 +1,16 @@
-body {
-    background-color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+nav {
+    display: flex;
+    justify-content: space-evenly; /* Distributes items evenly with equal space between */
+    align-items: center; /* Centers items vertically (if needed) */
+    padding: 10px 0; /* Optional: Adds spacing above and below */
 }
 
-div#content {
-    width: 1000px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 5px;
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: #000; /* Optional: Set your desired link color */
+    font-weight: bold; /* Optional: Makes the text bold */
 }
 
-div#title {
-    text-align: left;
-    margin-top: 20px;
-    padding-top: 2cm;
-    margin: 0px;
-    display: block;
-}
-
-div.personal-statement {
-    float: left;
-    margin: 0px 10px;
-    font-weight: 300;
-    font-size: 15px;
-}
-
-table#personal-statement-table {
-    margin-top: 15px;
-}
-
-img#profile-img {
-    max-height: 200px;
-    height: auto;
-    border-radius: 15px;
-      display: block;
-  margin-left: auto;
-  margin-right: 20px;
-  margin-top: 16px;
-  padding: 5px;
-}
-
-div#links {
-    width: 100%
-}
-div#links a {
-    float: left;
-    text-align: center;
-    width: 20.0%; /* 600 / num_links */
-}
-
-h1 {
-    padding-top: 0.5cm;
-    font-family:helvetica;
-    margin: 10px;
-}
-
-ul {
-/*     list-style-type: none; */
-}
-
-span.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
-td.image-td {
-    width: 20%;
-    text-align: center;
-}
-td.description-td {
-    width: 70%
-}
-img.project-img {
-    max-width: 250px;
-    max-height: 150px;
-    /* float: right; */
-    /* height: auto;
-    width: auto; */
-    border-radius: 3px;
-}
-table {
-    width: 100%;
-}
-div.container {
-    float: left;
-    width: 100%;
-}
-
-a {
-    color: #47D;
-}
-h2 {
-    color: #47D;
-    margin-left: 10px;
-}
-td#personal-statement-td {
-    width: 70%;
-}
-
-hr {
-    height: 3px;
-    border: none;
-    background: #ccc;
-    border-radius: 8px;
-}
-p#copyright {
-    text-align: center;
-    font-size: 12px;
+nav a:hover {
+    color: #007BFF; /* Optional: Change link color on hover */
 }
