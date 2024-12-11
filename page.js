@@ -6,6 +6,8 @@ var data = {
                 teams: [
                     {
                         teamName: 'Harshit Sikchi*, Siddhant Agarwal*, Pranaya Jajoo*, Samyak Parajuli*, Max Rudolph*, Peter Stone, Amy Zhang, Scott Niekum',
+                        // teamName: ['Harshit Sikchi*', 'Siddhant Agarwal*', 'Pranaya Jajoo*', 'Samyak Parajuli*', 'Max Rudolph*', 'Peter Stone', 'Amy Zhang', 'Scott Niekum'],
+                        // teamURLS: ['https://hari-sikchi.github.io/', 'https://agarwalsiddhant10.github.io/', 'https://pranayajajoo.github.io/', 'https://samp830.github.io/', 'http://calcharles.github.io/', 'https://maxrudolph1.github.io/', 'https://www.cs.utexas.edu/~pstone/', 'https://www.ece.utexas.edu/people/faculty/amy-zhang', 'https://people.cs.umass.edu/~sniekum/'],
                         period: 'arxiv.org/abs/2412.05718',
                         text1: 'https://hari-sikchi.github.io/rlzero/',
                         text2: 'Releasing soon!',
