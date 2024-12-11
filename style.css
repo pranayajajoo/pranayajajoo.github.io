@@ -48,7 +48,7 @@ div#links {
 div#links a {
     float: left;
     text-align: center;
-    width: 20.0%; /* 600 / num_links */
+    width: 32%; /* Adjusted for 4 links */
 }
 
 h1 {
@@ -106,6 +106,8 @@ hr {
     border: none;
     background: #ccc;
     border-radius: 8px;
+    margin: 5px;
+    bottom: 4px;
 }
 p#copyright {
     text-align: center;
