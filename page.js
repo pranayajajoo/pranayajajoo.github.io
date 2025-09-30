@@ -1,16 +1,30 @@
 var data = {
     "research": [
         {
+            img: 'images_pranaya/rldp-website.jpg',
+            title: 'Regularized Latent Dynamics Prediction is a Strong Baseline for Behavioral Foundation Models',
+            teams: [
+                {
+                    teamName: 'Pranaya Jajoo, Harshit Sikchi, Siddhant Agarwal, Amy Zhang, Scott Niekum, Martha White',
+                    // teamName: ['Harshit Sikchi*', 'Siddhant Agarwal*', 'Pranaya Jajoo*', 'Samyak Parajuli*', 'Max Rudolph*', 'Peter Stone', 'Amy Zhang', 'Scott Niekum'],
+                    teamURLS: ['https://pranayajajoo.github.io/', 'https://hari-sikchi.github.io/', 'https://agarwalsiddhant10.github.io/', 'https://www.ece.utexas.edu/people/faculty/amy-zhang', 'https://people.cs.umass.edu/~sniekum/', 'https://webdocs.cs.ualberta.ca/~whitem/'],
+                    // period: 'https://arxiv.org/abs/2412.05718',
+                    // text1: 'https://hari-sikchi.github.io/rlzero/',
+                    // text2: 'NeurIPS 2025, RLDM 2025, ICLR 2025 Workshop on Generative Models for Robot Learning',
+                }
+               ]
+    },
+        {
                 img: 'images_pranaya/rlzero.jpg',
                 title: 'RLZero: Zero-Shot Language to Behaviors without any Supervision',
                 teams: [
                     {
                         teamName: 'Harshit Sikchi*, Siddhant Agarwal*, Pranaya Jajoo*, Samyak Parajuli*, Max Rudolph*, Peter Stone, Amy Zhang, Scott Niekum',
                         // teamName: ['Harshit Sikchi*', 'Siddhant Agarwal*', 'Pranaya Jajoo*', 'Samyak Parajuli*', 'Max Rudolph*', 'Peter Stone', 'Amy Zhang', 'Scott Niekum'],
-                        // teamURLS: ['https://hari-sikchi.github.io/', 'https://agarwalsiddhant10.github.io/', 'https://pranayajajoo.github.io/', 'https://samp830.github.io/', 'http://calcharles.github.io/', 'https://maxrudolph1.github.io/', 'https://www.cs.utexas.edu/~pstone/', 'https://www.ece.utexas.edu/people/faculty/amy-zhang', 'https://people.cs.umass.edu/~sniekum/'],
+                        teamURLS: ['https://hari-sikchi.github.io/', 'https://agarwalsiddhant10.github.io/', 'https://pranayajajoo.github.io/', 'https://samp830.github.io/', 'http://calcharles.github.io/', 'https://maxrudolph1.github.io/', 'https://www.cs.utexas.edu/~pstone/', 'https://www.ece.utexas.edu/people/faculty/amy-zhang', 'https://people.cs.umass.edu/~sniekum/'],
                         period: 'https://arxiv.org/abs/2412.05718',
                         text1: 'https://hari-sikchi.github.io/rlzero/',
-                        text2: '',
+                        text2: 'NeurIPS 2025, RLDM 2025, ICLR 2025 Workshop on Generative Models for Robot Learning',
                     }
                    ]
         },
