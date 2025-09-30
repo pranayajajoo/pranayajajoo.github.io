@@ -1,7 +1,7 @@
 var data = {
     "research": [
         {
-            img: 'images_pranaya/rldp-website.jpg',
+            img: 'images_pranaya/rldp-website.png',
             title: 'Regularized Latent Dynamics Prediction is a Strong Baseline for Behavioral Foundation Models',
             teams: [
                 {
