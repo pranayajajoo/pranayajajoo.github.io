@@ -111,6 +111,51 @@ function getProjectHTML(proj) {
     return html;
 }
 
+// function getResearchHTML(proj) {
+//     var html = '<tr>';
+//     // Adding the image
+//     if ('img' in proj && proj.img.trim() !== '') {
+//         html += '<td class="image-td"><img class="project-img" src="' + proj.img + '" alt="Project Image"></td>';
+//     } else {
+//         html += '<td class="image-td">No image available</td>'; // Fallback when there is no image
+//     }
+
+//     // Add title and team details
+//     html += '<td class="description-td"><h3>' + proj.title + '</h3>';
+
+//     if ('teams' in proj && Array.isArray(proj.teams)) {
+//         for (var i = 0; i < proj.teams.length; i++) {
+//             var team = proj.teams[i];
+//             if ('teamName' in team) {
+//                 // Remove the word "team" from the team title
+//                 var teamTitle = team.teamName.replace('team', '').trim();
+//                 html += '<p><strong>' + teamTitle + ':</strong></p>';
+//             }
+//             if ('period' in team) {
+//                 // Remove the word "team" from the team title
+//                 var teamTitle = team.period.replace('team', '').trim();
+//                 html += '<p><a href="' + teamTitle + '" target="_blank"><i>Paper</i></a></p>';
+//             }
+//             if ('text1' in team) {
+//                 // Remove the word "team" from the team title
+//                 var teamTitle = team.text1.replace('team', '').trim();
+//                 html += '<p><a href="' + teamTitle + '" target="_blank"><i>Website</i></a></p>';
+//             }
+//             if ('text2' in team) {
+//                 // Remove the word "team" from the team title
+//                 var teamTitle = team.text2.replace('team', '').trim();
+//                 html += '<p>' + teamTitle + '</p>';
+//             }     
+//         }
+//     }
+    
+//     html += '</td>';
+
+//     html += '</tr>';
+//     return html;
+// }
+
+// adding team urls
 function getResearchHTML(proj) {
     var html = '<tr>';
     // Adding the image
@@ -126,34 +171,46 @@ function getResearchHTML(proj) {
     if ('teams' in proj && Array.isArray(proj.teams)) {
         for (var i = 0; i < proj.teams.length; i++) {
             var team = proj.teams[i];
-            if ('teamName' in team) {
-                // Remove the word "team" from the team title
-                var teamTitle = team.teamName.replace('team', '').trim();
-                html += '<p><strong>' + teamTitle + ':</strong></p>';
+
+            // Handle teamName + teamURLS
+            if ('teamName' in team && 'teamURLS' in team) {
+                var names = team.teamName.split(',').map(n => n.trim());
+                var urls = team.teamURLS;
+                var linkedNames = [];
+
+                for (var j = 0; j < names.length; j++) {
+                    if (urls[j]) {
+                        linkedNames.push('<a href="' + urls[j] + '" target="_blank">' + names[j] + '</a>');
+                    } else {
+                        linkedNames.push(names[j]);
+                    }
+                }
+
+                html += '<p><strong>' + linkedNames.join(', ') + '</strong></p>';
             }
+
+            // Handle paper link
             if ('period' in team) {
-                // Remove the word "team" from the team title
-                var teamTitle = team.period.replace('team', '').trim();
-                html += '<p><a href="' + teamTitle + '" target="_blank"><i>Paper</i></a></p>';
+                html += '<p><a href="' + team.period + '" target="_blank"><i>Paper</i></a></p>';
             }
+
+            // Handle website link
             if ('text1' in team) {
-                // Remove the word "team" from the team title
-                var teamTitle = team.text1.replace('team', '').trim();
-                html += '<p><a href="' + teamTitle + '" target="_blank"><i>Website</i></a></p>';
+                html += '<p><a href="' + team.text1 + '" target="_blank"><i>Website</i></a></p>';
             }
+
+            // Handle other text
             if ('text2' in team) {
-                // Remove the word "team" from the team title
-                var teamTitle = team.text2.replace('team', '').trim();
-                html += '<p>' + teamTitle + '</p>';
-            }     
+                html += '<p>' + team.text2 + '</p>';
+            }
         }
     }
     
     html += '</td>';
-
     html += '</tr>';
     return html;
 }
+
 
 function getTeachingHTML(proj) {
     var html = '<tr>';
