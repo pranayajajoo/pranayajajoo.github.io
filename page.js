@@ -8,9 +8,9 @@ var data = {
                     teamName: 'Pranaya Jajoo, Harshit Sikchi, Siddhant Agarwal, Amy Zhang, Scott Niekum, Martha White',
                     // teamName: ['Harshit Sikchi*', 'Siddhant Agarwal*', 'Pranaya Jajoo*', 'Samyak Parajuli*', 'Max Rudolph*', 'Peter Stone', 'Amy Zhang', 'Scott Niekum'],
                     teamURLS: ['https://pranayajajoo.github.io/', 'https://hari-sikchi.github.io/', 'https://agarwalsiddhant10.github.io/', 'https://www.ece.utexas.edu/people/faculty/amy-zhang', 'https://people.cs.umass.edu/~sniekum/', 'https://webdocs.cs.ualberta.ca/~whitem/'],
-                    // period: 'https://arxiv.org/abs/2412.05718',
+                    period: 'https://openreview.net/forum?id=jdL6WB5jHZ&nesting=2&sort=date-desc',
                     // text1: 'https://hari-sikchi.github.io/rlzero/',
-                    // text2: 'NeurIPS 2025, RLDM 2025, ICLR 2025 Workshop on Generative Models for Robot Learning',
+                    text2: 'ICLR 2026, RLC 2025 Workshop on Reinforcement Learning Beyond Rewards',
                 }
                ]
     },
